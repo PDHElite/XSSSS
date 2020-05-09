@@ -12,7 +12,7 @@ class App extends Component {
                 "id" : "100",
                 "Vendor":"Hankook",
                 "Amount" : "$18,000",
-                "invoice" : "1123",
+                "Invoice" : "1123",
                 "Date" : "08/21/2019"
             },
 
@@ -20,7 +20,7 @@ class App extends Component {
                 "id" : "200",
                 "Vendor":"Hankook",
                 "Amount" : "$18,000",
-                "invoice" : "1123",
+                "Invoice" : "1123",
                 "Date" : "08/21/2019"
             },
 
@@ -28,7 +28,7 @@ class App extends Component {
                 "id" : "300",
                 "Vendor":"Hankook",
                 "Amount" : "$18,000",
-                "invoice" : "1123",
+                "Invoice" : "1123",
                 "Date" : "08/21/2019"
             }
         ]
@@ -44,7 +44,7 @@ class App extends Component {
 
     async componentDidMount() {
         const response = await fetch(
-          "https://e106ldopga.execute-api.us-west-1.amazonaws.com/Dev"
+       "https://kg9a89l7mf.execute-api.us-west-1.amazonaws.com/Dev"    //Api Prueba
         );
         const body = await response.json();
         this.setState({ invoices: body, isLoading: false });
